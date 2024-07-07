@@ -1,7 +1,7 @@
-// src/components/CreatePost.js
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { PostContext } from '../PostContext';
+import './CreatePost.css';
 
 class CreatePost extends React.Component {
     static contextType = PostContext;
@@ -49,9 +49,9 @@ class CreatePost extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>{this.props.match.params.id ? 'Edit Post' : 'Create Post'}</h1>
-                <form onSubmit={this.handleSubmit}>
+            <div className="create-post">
+                <h1 className="create-post-title">{this.props.match.params.id ? 'Edit Post' : 'Create Post'}</h1>
+                <form className="create-post-form" onSubmit={this.handleSubmit}>
                     <input
                         type="text"
                         name="title"
@@ -59,6 +59,7 @@ class CreatePost extends React.Component {
                         value={this.state.title}
                         onChange={this.handleChange}
                         required
+                        className="create-post-input"
                     />
                     <textarea
                         name="content"
@@ -66,8 +67,9 @@ class CreatePost extends React.Component {
                         value={this.state.content}
                         onChange={this.handleChange}
                         required
+                        className="create-post-textarea"
                     />
-                    <button type="submit">
+                    <button type="submit" className="create-post-button">
                         {this.props.match.params.id ? 'Update' : 'Create'}
                     </button>
                 </form>

@@ -1,0 +1,79 @@
+.post-display {
+    text-align: center;
+    padding: 20px;
+}
+
+.post-display-title {
+    color: #0654F7;
+}
+
+.post-display-create-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.post-display-create-button:hover {
+    background-color: #1976D2;
+}
+
+.post-display-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.post-display-item {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-display-item-title {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+.post-display-item-content {
+    margin: 0 0 10px 0;
+    color: #666;
+}
+
+.post-display-item-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-display-item-edit-button,
+.post-display-item-delete-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.post-display-item-edit-button {
+    background-color: #FFC107;
+    color: white;
+}
+
+.post-display-item-edit-button:hover {
+    background-color: #FFA000;
+}
+
+.post-display-item-delete-button {
+    background-color: #F44336;
+    color: white;
+}
+
+.post-display-item-delete-button:hover {
+    background-color: #D32F2F;
+}
